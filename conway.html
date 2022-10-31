@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./conway.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="interno" id="parametros">
+      CONWAY'S GAME OF LIFE <hr>
+      PARAMETERS
+      <table class="t-chica">
+        <tr class="t-chica">
+          <td class="t-chica">Size (10-250)</td>
+          <td class="t-chica"><input id="inputSize" type="text" size="2px" value="10"></td>
+        </tr>
+        <tr class="t-chica">
+          <td class="t-chica">Delay ms (10-1000)</td>
+          <td class="t-chica"><input id="inputDelay" type="text" size="2px" value="150"></td>
+        </tr>
+      </table><br>
+      <button type="button" onclick="createTable()">Create</button>
+      <button type="button" id="start" onclick="startGens()" disabled="true">Start</button><hr>
+      <p class="chica">
+        INSTRUCTIONS: <br>
+        <ol class="chica instr">
+          <li>Set a size</li>
+          <li>Click "Create"</li>
+          <li>Move mouse over the table to add "Cells"</li>
+          <li>Click "Start"</li>
+        </ol>
+      </p>      
+    </div>
+    <div class="interno" id="contenido"></div>
+  </div>  
+  
+  <script type="text/javascript" src="./conway.js"></script>
+</body>
+</html>
